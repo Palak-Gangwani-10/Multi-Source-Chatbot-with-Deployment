@@ -8,6 +8,7 @@ from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
 from dotenv import load_dotenv
 
+load_dotenv() 
 
 class ChatState(TypedDict):
 
@@ -40,7 +41,9 @@ graph = StateGraph(ChatState)
 # add nodes
 graph.add_node('chat_node', chat_node)
 
+# add edges
 graph.add_edge(START, 'chat_node')
 graph.add_edge('chat_node', END)
 
+# Compile the graph
 chatbot = graph.compile(checkpointer=checkpointer)
