@@ -1,0 +1,7 @@
+This is a sample document for ingestion.
+It describes a LangGraph Chatbot and its architecture.
+Key points:
+- Uses Groq model for answers
+- Provides endpoints for document, URL, and JSON ingestion
+- Builds a TF-IDF index over chunks
+- Returns well-formatted answers with citations

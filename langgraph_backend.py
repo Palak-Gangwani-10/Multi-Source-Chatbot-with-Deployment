@@ -19,7 +19,7 @@ groq_key = os.environ["GROQ_API_KEY"]
 # Create model
 model = ChatGroq(
     api_key=groq_key,
-    model="llama3-70b-8192"
+    model="llama-3.1-8b-instant"
 )
 
 # Checkpointer
