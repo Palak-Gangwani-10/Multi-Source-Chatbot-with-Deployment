@@ -1,0 +1,11 @@
+# Ignore environment secrets
+.env
+
+# Ignore Python cache and virtual environment files
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Ignore compiled Docker files
+/data
